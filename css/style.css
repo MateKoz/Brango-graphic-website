@@ -1,9 +1,19 @@
+:root {
+    --secondary-color: #0f828a;
+    --main-color: #dddddd
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     background-color: #444;
     height: 100vh;
     width: 100vw;
+
+}
+
+html {
+    scroll-padding-top: 66px;
 }
 
 *,
@@ -24,25 +34,26 @@ p {
 }
 
 .shadow-bg {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 nav {
     text-transform: uppercase;
     transition: background-color .6s;
     z-index: 5;
+
 }
 
 .nav-link {
-    color: #dddddd;
+    color: var(--main-color);
 }
 
 nav a {
-    color: #dddddd;
+    color: var(--main-color);
 }
 
 nav a:hover {
-    color: #0f828a;
+    color: var(--secondary-color);
 }
 
 .nav-link:hover {
@@ -50,12 +61,12 @@ nav a:hover {
 }
 
 .nav-link:focus {
-    color: #0f828a;
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
 .fa-solid {
-    color: #dddddd;
+    color: var(--main-color);
     padding: 10px;
 }
 
@@ -64,11 +75,11 @@ nav a:hover {
 }
 
 .navbar-brand:hover {
-    color: #dddddd;
+    color: var(--main-color);
 }
 
 .active {
-    color: #0f828a;
+    color: var(--secondary-color);
 }
 
 .navbar-toggler:focus {
@@ -76,11 +87,11 @@ nav a:hover {
 }
 
 .logo {
-    color: #0f828a;
+    color: var(--secondary-color);
 }
 
 header {
-    color: white;
+    color: var(--main-color);
 }
 
 h1, p, a {
@@ -119,7 +130,7 @@ h1, p, a {
 }
 
 header h1 span {
-    color: #0f828a;
+    color: var(--secondary-color);
 }
 
 .fa-angles-down {
@@ -132,16 +143,116 @@ header h1 span {
     cursor: pointer;
 }
 
+.underline {
+    width: 70px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 0 auto 40px;
+    z-index: 4;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us i {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #333333;
+}
+
+.about-card-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+
+}
+
+.about-card-text {
+    font-size: 14px;
+    color: #333333;
+
+}
+
+.col-sm-6 {
+    padding: 0 20px;
+}
+
+.box-hover {
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: background-color .5s;
+}
+
+.box-hover:hover {
+    background-color: #0f828a;
+    border-radius: 5px;
+}
+
+.about-us-hero {
+    position: relative;
+    background-image: url('../img/laptop-gac46fe875_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    color: var(--main-color);
+
+}
+
+.about-us-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 63, 63, 0.8);
+    z-index: -5;
+}
+
+.font-color-p {
+    color: var(--main-color)
+}
+
+.about-us-hero i {
+    font-size: 20px;
+}
+
+.scale-up-center {
+    transition-duration: 0.5s;
+}
+
+.scale-up-center:hover {
+    transform: scale(1.2);
+
+}
+
+
 @media (min-width: 1200px) {
     .hero-img {
         background-image: url('../img/office-big.jpg');
     }
 }
 
+
+@media (min-width: 992px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        background: rgba(0, 0, 0, .6);
+    }
+}
+
+
 @media (min-width: 375px) {
     header h1 {
         font-size: 30px;
     }
+
     header p {
         font-size: 16px;
     }
@@ -151,12 +262,15 @@ header h1 span {
     header h1 {
         font-size: 48px;
     }
+
     header p {
         font-size: 24px;
     }
+
     .btn-outline-light {
         font-size: 20px;
         padding: 10px 20px;
     }
 }
+
 
