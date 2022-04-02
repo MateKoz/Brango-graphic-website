@@ -1,0 +1,162 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background-color: #444;
+    height: 100vh;
+    width: 100vw;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 10px;
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+nav {
+    text-transform: uppercase;
+    transition: background-color .6s;
+    z-index: 5;
+}
+
+.nav-link {
+    color: #dddddd;
+}
+
+nav a {
+    color: #dddddd;
+}
+
+nav a:hover {
+    color: #0f828a;
+}
+
+.nav-link:hover {
+    color: #0f828a;
+}
+
+.nav-link:focus {
+    color: #0f828a;
+    text-decoration: underline;
+}
+
+.fa-solid {
+    color: #dddddd;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #dddddd;
+}
+
+.active {
+    color: #0f828a;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.logo {
+    color: #0f828a;
+}
+
+header {
+    color: white;
+}
+
+h1, p, a {
+    z-index: 1;
+}
+
+.hero-img {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/office-gd5042f187_640.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+}
+
+.hero-shadow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    z-index: 5;
+}
+
+header h1 span {
+    color: #0f828a;
+}
+
+.fa-angles-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .hero-img {
+        background-image: url('../img/office-big.jpg');
+    }
+}
+
+@media (min-width: 375px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 48px;
+    }
+    header p {
+        font-size: 24px;
+    }
+    .btn-outline-light {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+
