@@ -1,5 +1,5 @@
 :root {
-    --secondary-color: #0f828a;
+    --secondary-color: #FFBF00;
     --main-color: #dddddd
 }
 
@@ -34,7 +34,7 @@ p {
 }
 
 .shadow-bg {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .85);
 }
 
 nav {
@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 .nav-link:hover {
-    color: #0f828a;
+    color: var(--secondary-color);
 }
 
 .nav-link:focus {
@@ -76,6 +76,12 @@ nav a:hover {
 
 .navbar-brand:hover {
     color: var(--main-color);
+}
+
+.navbar-logo {
+    height: 60px;
+    width: 150px;
+    z-index: 10;
 }
 
 .active {
@@ -187,8 +193,9 @@ h2 {
 }
 
 .box-hover:hover {
-    background-color: #0f828a;
+    background-color: var(--secondary-color);
     border-radius: 5px;
+    color: #dddddd;
 }
 
 .about-us-hero {
@@ -198,7 +205,6 @@ h2 {
     background-size: cover;
     z-index: 0;
     color: var(--main-color);
-
 }
 
 .about-us-shadow {
@@ -215,7 +221,7 @@ h2 {
 }
 
 .about-us-hero i {
-    font-size: 20px;
+    font-size: 36px;
 }
 
 .scale-up-center {
@@ -224,13 +230,43 @@ h2 {
 
 .scale-up-center:hover {
     transform: scale(1.2);
-
 }
 
+.about-hero-text {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.about-hero-title {
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.about-us-card {
+    margin-top: 10px;
+}
+
+.carousel-item {
+    height: 600px;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    right: 0;
+    left: 0;
+    padding: 30px 0;
+}
 
 @media (min-width: 1200px) {
     .hero-img {
         background-image: url('../img/office-big.jpg');
+    }
+
+    .about-us-hero {
+        background-image: url('../img/laptop-gb9f1cc584_1280.jpg');
     }
 }
 
@@ -239,22 +275,11 @@ h2 {
     html {
         scroll-padding-top: 60px;
     }
-}
 
-@media (max-width: 400px) {
-    .navbar {
-        background: rgba(0, 0, 0, .6);
-    }
-}
-
-
-@media (min-width: 375px) {
-    header h1 {
-        font-size: 30px;
-    }
-
-    header p {
-        font-size: 16px;
+    .img-carusel {
+        height: 100%;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -271,6 +296,47 @@ h2 {
         font-size: 20px;
         padding: 10px 20px;
     }
+
+    .img-carusel {
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .nav-link {
+        text-align: end;
+    }
+
 }
+
+@media (max-width: 400px) {
+    .navbar {
+        background: rgba(0, 0, 0, .6);
+    }
+
+    .nav-link {
+        text-align: end;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (min-width: 375px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        text-align: end;
+        margin-right: 20px;
+    }
+
+}
+
 
 
