@@ -314,6 +314,7 @@ h2 {
 .offer-info {
     margin-top: 20px;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .achievement {
