@@ -1,0 +1,16 @@
+.portfolio {
+    margin-top: 88px;
+    z-index: -1;
+}
+
+.navbar {
+    z-index: 5;
+}
+
+.portfolio h2 {
+    padding-top: 50px;
+}
+
+.contact {
+    margin-top: 50px;
+}
