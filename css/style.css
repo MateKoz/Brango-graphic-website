@@ -312,8 +312,8 @@ h2 {
 }
 
 .offer-info {
-    margin-top: 20px;
-    font-size: 12px;
+    margin-top: 50px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -322,10 +322,16 @@ h2 {
     background-color: #eae9e9;
 }
 
-.offer-info a {
+.contact-button {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
+    transition: 0.5s;
+}
+
+.contact-button:hover {
+    transform: scale(1.2);
+    color: #f38003
 }
 
 .achievement-number {
@@ -454,6 +460,13 @@ h2 {
 
     .nav-link {
         text-align: end;
+    }
+}
+
+@media (max-width: 768px) {
+    .offer-info {
+        font-size: 14px;
+        padding: 0 20px;
     }
 }
 
